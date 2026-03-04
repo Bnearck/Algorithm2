@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\berkc\\OneDrive\\Desktop\\Coding\\Visual Studio\\Algorithm Week 1-2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{740B00C7-4A03-4731-9FEC-91ED98006F55}|Pointer to Functions\\Pointer to Functions.vcxproj|C:\\Users\\berkc\\OneDrive\\Desktop\\Coding\\Visual Studio\\Algorithm Week 1-2\\Pointer to Functions\\Pointer to Functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{740B00C7-4A03-4731-9FEC-91ED98006F55}|Pointer to Functions\\Pointer to Functions.vcxproj|solutionrelative:Pointer to Functions\\Pointer to Functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D5F786-8FD5-4616-9645-750016D9FF20}|Algorithm Week 1-2\\Algorithm Week 1-2.vcxproj|C:\\Users\\berkc\\OneDrive\\Desktop\\Coding\\Visual Studio\\Algorithm Week 1-2\\Algorithm Week 1-2\\Algorithm Week 1-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{51D5F786-8FD5-4616-9645-750016D9FF20}|Algorithm Week 1-2\\Algorithm Week 1-2.vcxproj|solutionrelative:Algorithm Week 1-2\\Algorithm Week 1-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50A5BD9C-9EA5-4215-8ABE-D940BCA1A7AF}|Pointer Void Example\\Pointer Void Example.vcxproj|C:\\Users\\berkc\\OneDrive\\Desktop\\Coding\\Visual Studio\\Algorithm Week 1-2\\Pointer Void Example\\Pointer Void Example.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{50A5BD9C-9EA5-4215-8ABE-D940BCA1A7AF}|Pointer Void Example\\Pointer Void Example.vcxproj|solutionrelative:Pointer Void Example\\Pointer Void Example.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pointer to Functions.cpp",
+              "DocumentMoniker": "C:\\Users\\berkc\\OneDrive\\Desktop\\Coding\\Visual Studio\\Algorithm Week 1-2\\Pointer to Functions\\Pointer to Functions.cpp",
+              "RelativeDocumentMoniker": "Pointer to Functions\\Pointer to Functions.cpp",
+              "ToolTip": "C:\\Users\\berkc\\OneDrive\\Desktop\\Coding\\Visual Studio\\Algorithm Week 1-2\\Pointer to Functions\\Pointer to Functions.cpp",
+              "RelativeToolTip": "Pointer to Functions\\Pointer to Functions.cpp",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-04T19:20:04.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pointer Void Example.cpp",
+              "DocumentMoniker": "C:\\Users\\berkc\\OneDrive\\Desktop\\Coding\\Visual Studio\\Algorithm Week 1-2\\Pointer Void Example\\Pointer Void Example.cpp",
+              "RelativeDocumentMoniker": "Pointer Void Example\\Pointer Void Example.cpp",
+              "ToolTip": "C:\\Users\\berkc\\OneDrive\\Desktop\\Coding\\Visual Studio\\Algorithm Week 1-2\\Pointer Void Example\\Pointer Void Example.cpp",
+              "RelativeToolTip": "Pointer Void Example\\Pointer Void Example.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-04T19:05:40.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Algorithm Week 1-2.cpp",
+              "DocumentMoniker": "C:\\Users\\berkc\\OneDrive\\Desktop\\Coding\\Visual Studio\\Algorithm Week 1-2\\Algorithm Week 1-2\\Algorithm Week 1-2.cpp",
+              "RelativeDocumentMoniker": "Algorithm Week 1-2\\Algorithm Week 1-2.cpp",
+              "ToolTip": "C:\\Users\\berkc\\OneDrive\\Desktop\\Coding\\Visual Studio\\Algorithm Week 1-2\\Algorithm Week 1-2\\Algorithm Week 1-2.cpp",
+              "RelativeToolTip": "Algorithm Week 1-2\\Algorithm Week 1-2.cpp",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-04T17:40:20.606Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
