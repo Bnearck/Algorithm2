@@ -1,9 +1,0 @@
-<Solution>
-  <Configurations>
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="Algorithm Week 1-2/Algorithm Week 1-2.vcxproj" Id="51d5f786-8fd5-4616-9645-750016d9ff20" />
-  <Project Path="Pointer to Functions/Pointer to Functions.vcxproj" Id="740b00c7-4a03-4731-9fec-91ed98006f55" />
-  <Project Path="Pointer Void Example/Pointer Void Example.vcxproj" Id="50a5bd9c-9ea5-4215-8abe-d940bca1a7af" />
-</Solution>
