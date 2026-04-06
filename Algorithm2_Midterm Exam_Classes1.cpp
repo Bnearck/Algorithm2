@@ -1,61 +1,77 @@
 #include <iostream>
 using namespace std;
 
+// ─────────────────────────────────────────────
+// CLASS: Rectangle
+// ─────────────────────────────────────────────
 class Rectangle {
     int width, height;
+
 public:
-    // Fonksiyonların ne yapacağını burada tanımlıyoruz
-    void setValues(int w, int h) { //Set values fonksiyonunu void setValues(int w, int h) şeklinde yazıp "Prototip" şeklinde bırakabilirdik,
-                                   //Bu durumda bu fonksiyonu classın dışında detaylı tanımlamamız gerekirdi aşağıdaki örnekte olduu gibi
-        width = w;
+    // Fonksiyonu class içinde inline olarak tanımladık
+    void setValues(int w, int h) {
+        width  = w;
         height = h;
+        // Not: setValues'u sadece prototip olarak bırakıp
+        // aşağıdaki gibi dışarıda da tanımlayabilirdik:
+        // void Rectangle::setValues(int x, int y) { width = x; height = y; }
     }
-    int area() { //Area fonksiyonunu ise class içinde direkt inline oalrak tam tanımlı bir şekilde tanımladık
+
+    // area() de inline tanımlı
+    int area() {
         return width * height;
     }
-
-    /*void Rectangle::set_values (int x, int y) {
-  width = x;
-  height = y; FONKSİYONUN DIŞARIDA DETAYLI TANIMLADIK */
 };
 
+// ─────────────────────────────────────────────
+// CLASS: Triangle
+// ─────────────────────────────────────────────
 class Triangle {
     int edge1, edge2, edge3;
+
 public:
-    Triangle();
-    Triangle(int, int, int);
-    int area (void)
-    {
-        return (edge1*edge2*edge3);
+    Triangle();              // Default constructor prototipi
+    Triangle(int, int, int); // Parametreli constructor prototipi
+
+    int area() {
+        return (edge1 * edge2 * edge3);
     }
 };
 
-Triangle::Triangle(){ //Constructoru sadece dışarıdanda tanımlayabildiğmizi göstermek için dışarıdan tanımladık içeri sadece prototip yazdık
-    edge1 = 3;        //İlerleyen örneklerde constructorları inline oalrak da tanımlayacağız
+// Default constructor — dışarıda tanımlandı (içeride sadece prototip var)
+// İlerleyen örneklerde constructorları inline olarak da tanımlayacağız
+Triangle::Triangle() {
+    edge1 = 3;
     edge2 = 4;
     edge3 = 5;
-};
+}
 
-Triangle::Triangle(int a, int b, int c) : edge1(a), edge2(b), edge3(c){ //Ayrıca burada daha profesyönel bir yol olan direkt tek satırda değişkenlere değer atamayı görüyoruz
-}; 
+// Parametreli constructor — initializer list kullanımı (daha profesyonel yol)
+Triangle::Triangle(int a, int b, int c) : edge1(a), edge2(b), edge3(c) {}
 
-
-
+// ─────────────────────────────────────────────
+// MAIN
+// ─────────────────────────────────────────────
 int main() {
-    Rectangle rect1; // Nesne oluşturma
-    Rectangle rect2;
+
+    // Rectangle nesneleri
+    // Her nesnenin kendi width/height'i vardır, biri diğerini etkilemez
+    Rectangle rect1, rect2;
 
     rect1.setValues(3, 5);
-    cout << "Alan: " << rect1.area() << endl;
+    cout << "rect1 Alan: " << rect1.area() << endl; // 15
 
     rect2.setValues(10, 15);
-    cout << "Alan: " << rect2.area() << endl; /* Görüldüğü üzere her class üzerinden üretilmiş nesnesin kendi width ve heighti vardır ve ona göre işlem yapılır
-    burada rec1 için width height 3 5 iken rect2 nesnesi için bunlar 10 ve 15dir yani biri diğerini etkilemez kendi içlerinde özeldir*/
+    cout << "rect2 Alan: " << rect2.area() << endl; // 150
 
-    Triangle tri1; //Constructor sayesinde parametre atamadığımız için otoamtik olarak parametreler 3,4,5 olarak atandı
-    Triangle tri2 (5,10,15); //Buradada constructor sayesinde setValue gibi bir fonksiyon kullanmadan direkt tri2 nesnesini edge1,edge2,edge3 değişkenlerine 5,10,15 atayabilidk
+    // Triangle nesneleri
+    Triangle tri1;          // Default constructor → edge1=3, edge2=4, edge3=5
+    Triangle tri2(5, 10, 15); // Parametreli constructor → setValues'a gerek yok
+    // Not: Tek parametrede tri2() yazılırsa derleyici nesne mi fonksiyon mu
+    //      anlayamaz; bu yüzden tri2{} sözdizimi kullanılır.
 
-    //Tek parametre göndermek istersek tri2() yaptığımızda C++ derleyicisi bunun nesnemi fonksiyonmu olduğunu anlayamaz ve hata verir bu yüzden tri2{} yapıyoruz
-    cout << tri1.area() << " - " << tri2.area() << endl;
+    cout << "tri1 Alan: " << tri1.area() << " | "
+         << "tri2 Alan: " << tri2.area() << endl;
+
     return 0;
 }
